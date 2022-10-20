@@ -32,12 +32,21 @@ public class Test1 {
     }
 
     static String enterString() throws IOException {
-        return new BufferedReader(new InputStreamReader(System.in)).readLine();
+        try {
+            return new BufferedReader(new InputStreamReader(System.in)).readLine();
+        }catch(IOException e){
+            System.out.println(e.getMessage());
+        }
+        return null;
     }
 
     static int enterInteger() throws IOException {
-
-        return Integer.parseInt(new BufferedReader(new InputStreamReader(System.in)).readLine());
+        try{
+            return Integer.parseInt(new BufferedReader(new InputStreamReader(System.in)).readLine());
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
+        return 0 ;
     }
 
 }

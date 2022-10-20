@@ -5,7 +5,7 @@ import java.io.*;
 public class Test {
     public static void main(String[] args) throws IOException {
 
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\dania\\IdeaProjects\\KATA\\src\\Labs\\Third\\Stih.txt");
+        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\dania\\IdeaProjects\\KATA\\src\\Labs\\Third\\Stih2.txt");
 
         byte[] b = fileInputStream.readAllBytes();
         FileOutputStream fileOutputStream2 = new FileOutputStream("C:\\Users\\dania\\IdeaProjects\\KATA\\src\\Labs\\Third\\f2.txt");
@@ -40,8 +40,6 @@ public class Test {
         FileInputStream fileInputStream1 = new FileInputStream("C:\\Users\\dania\\IdeaProjects\\KATA\\src\\Labs\\Third\\f2.txt");
         FileInputStream fileInputStream2 = new FileInputStream("C:\\Users\\dania\\IdeaProjects\\KATA\\src\\Labs\\Third\\f3.txt");
 
-//        byte[] c = fileInputStream1.readAllBytes();
-//        byte[] d = fileInputStream2.readAllBytes();
         int p;
 
 
@@ -59,6 +57,8 @@ public class Test {
             }
             fileOutputStream4.write(k);
         }
+
+
 
 
     }

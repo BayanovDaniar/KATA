@@ -6,7 +6,6 @@ public class Firm {
     public Firm(String name) {
         this.name = name;
     }
-
     public String getName() {
         return name;
     }
